@@ -10,8 +10,8 @@
 
 $('#btnSend').click(function () {
 
-    var grade = parseInt($('#txtAssignment').val(), 10) + parseInt($('#txtProject').val(), 10) +
-        parseInt($('#txtQuizzes').val(), 10) + parseInt($('#txtExams').val(), 10) + parseInt($('#txtINTEX').val(), 10);
+    var grade = parseInt($('#txtAssignment').val() * 0.55, 10) + parseInt($('#txtProject').val() * 0.05, 10) +
+        parseInt($('#txtQuizzes').val() * 0.1, 10) + parseInt($('#txtExams').val() * 0.2, 10) + parseInt($('#txtINTEX').val() * 0.1, 10);
 
     var lettergrade = '';
 
